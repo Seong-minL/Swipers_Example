@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>로그인</title>
+    </head>
+    <body>
+        <h1>Swipers</h1>
+        <input type = "text" id = "ID" value = "" placeholder = "아이디">
+        <br />
+        <input type = "text" id = "Password" value = "" placeholder = "비밀번호">
+        <br />
+        <button onclick = "fnVerify()">로그인</button>
+        <br />
+        <button><a href = "./SignUp.html">회원가입</a></button>
+        <br />
+        <button>아이디 / 비밀번호 찾기</button>
+    </body>
+    <script>
+        function fnVerify() {
+            let Id, Password;
+            Id = document.querySelector("#ID").value;
+            Password = document.querySelector("#Password").value;
+            if (Id != "swipers" || Password != "Swipers2")
+            {
+                alert("아이디나 비밀번호가 틀렸습니다");
+            }
+
+            if (Id == "swipers" && Password == "Swipers2")
+            {
+                open("./MyPage.html", EventTarget = "_self");
+            }
+        }
+    </script>
+</html>

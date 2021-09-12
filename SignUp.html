@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>회원가입</title>
+    </head>
+    <body>
+        <h1>회원가입</h1>
+        <br />
+        아이디를 입력하세요<input>
+        <br />
+        비밀번호를 입력하세요<input>
+        <br />
+        비밀번호를 다시 입력해주세요<input>
+        <br />
+        업체명을 입력해주세요<input>
+        <br />
+        업종을 골라주세요
+        <ul>
+            <li>디저트</li> <input type = "checkbox">
+            <li>카페</li> <input type = "checkbox">
+        </ul>
+        해당 업체가 맞습니까?
+        <br />
+        <img src = "./Yonsei.png">
+        <br />
+        <button onclick = "fnReturnLogIn()">예</button>
+        <button onclick = "alert('업체 정보를 다시 입력해주세요')">아니오</button>
+        <script>
+            function fnReturnLogIn() {
+                open("./LogIn.html", EventTarget = "_self");
+            }
+        </script>
+    </body>
+</html>
